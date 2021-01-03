@@ -1,0 +1,5 @@
+1.  sqlite3 finance.db
+2.  SELECT * FROM users;
+3.  .schema users
+4.  CREATE TABLE IF NOT EXISTS 'users' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 'hash' TEXT NOT NULL, 'cash' NUMERIC NOT NULL DEFAULT 10000.00);
+5.  CREATE UNIQUE INDEX 'username' ON "users" ("username");
